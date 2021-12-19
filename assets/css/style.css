@@ -1,3 +1,48 @@
-* {
-	background-color: red;
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Ubuntu+Condensed&display=swap');
+body {
+	font-family: 'Montserrat', 'sans-serif';
+}
+/* HEADING ELEMENTS */
+
+/* navbar-related elements starts here */
+
+/* section title */
+#title {
+	background-color: #ffc107;
+}
+
+#logoText {
+	display: inline;
+	color: #116530;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	letter-spacing: inherit;
+	text-transform: capitalize;
+	margin-left: 5%;
+	font-size: 2.0rem;
+}
+
+#navbarNav a {
+	text-decoration: none;
+	letter-spacing: 2px;
+	padding: 20px;
+}
+
+.current-page {
+	font-weight: bold;
+}
+
+/*lvha nav items*/
+nav a:link {
+	color: #0B4619;
+}
+nav a:visited {
+	color: #116530;
+}
+nav a:hover {
+	color: #D06224;
+	text-shadow: 1px 1px 10px #ffffff;
+}
+nav a:active {
+	color: #E8E8CC;
 }
