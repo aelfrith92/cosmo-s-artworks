@@ -45,17 +45,17 @@ body {
 }
 
 /*lvha nav items*/
-nav a:link {
+#navbarNav a:link {
 	color: #0B4619;
 }
-nav a:visited {
+#navbarNav a:visited {
 	color: #116530;
 }
-nav a:hover {
+#navbarNav a:hover {
 	color: #D06224;
 	text-shadow: 1px 1px 10px #ffffff;
 }
-nav a:active {
+#navbarNav a:active {
 	color: #E8E8CC;
 }
 
@@ -93,7 +93,7 @@ nav a:active {
 
 @keyframes welcomeAnimation {
 	0% {
-		transform: rotate(20deg) scale(0.7);
+		transform: rotate(20deg) scale(0.1);
 	}
 	100% {
 		transform: rotate(0deg) scale(1);
