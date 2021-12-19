@@ -19,7 +19,6 @@ h1, h3 {
 
 .container-fluid {
   padding: 3% 15%;
-  margin: 5% auto;
 }
 
 /* navbar-related elements starts here */
@@ -101,9 +100,12 @@ h1, h3 {
 }
 
 /* section features starts here*/
-.featbox {
+#features {
   text-align: center;
-  margin: 5% auto;
+}
+
+.featbox {
+  margin: 1.8% auto;
 }
 
 .featbox i {
@@ -119,11 +121,11 @@ h1, h3 {
   font-size: 2.5rem;
 }
 
-.featbox p {
-  font-size: 1.0rem;
+.featp {
+  margin: 0 auto;
   color: #116530;
+  padding: 0 5%;
 }
-
 /* media queries*/
 
 @media (max-width: 992px) {
@@ -146,5 +148,9 @@ h1, h3 {
   .featbox {
     text-align: center;
     margin: 3% auto;
+  }
+
+  hr {
+    display: none;
   }
 }
