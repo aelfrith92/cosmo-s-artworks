@@ -3,13 +3,23 @@
 body {
 	font-family: 'Montserrat', 'sans-serif';
 }
-/* HEADING ELEMENTS */
+/* HEADER ELEMENTS */
+
+/* section title */
+
+#title {
+	background-color: #ffc107;
+}
+
+/*overriding bootstrap.css*/
+.container-fluid {
+	padding: 3% 15%;
+}
 
 /* navbar-related elements starts here */
 
-/* section title */
-#title {
-	background-color: #ffc107;
+.navbar {
+	padding: 0 0 4.5rem 0;
 }
 
 #logoText {
