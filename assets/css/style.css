@@ -1,18 +1,16 @@
 /* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Ubuntu+Condensed&display=swap');
-
-body {
+* {
+	color: #0B4619;
 	font-family: 'Montserrat', 'sans-serif';
 }
 /* HEADER ELEMENTS */
 
 /* section title */
 
-#title {
+.section-odd {
 	background-color: #ffc107;
 }
-
-/*overriding bootstrap.css*/
 
 .container-fluid {
 	padding: 3% 15%;
@@ -26,7 +24,6 @@ body {
 
 #logoText {
 	display: inline;
-	color: #116530;
 	font-family: 'Ubuntu Condensed', sans-serif;
 	letter-spacing: inherit;
 	text-transform: capitalize;
@@ -48,6 +45,7 @@ body {
 #navbarNav a:link {
 	color: #0B4619;
 }
+
 #navbarNav a:visited {
 	color: #116530;
 }
@@ -74,11 +72,15 @@ body {
 
 /* Bottom part of the header starts here */
 
-#title h1{
-	color: #116530;
-	font-size: 2.3rem;
-	font-weight: 500;
+.section-odd h1{
+	font-size: 2.0rem;
+	font-weight: bolder;
 	line-height: 1.3;
+}
+
+.section-odd p {
+	color: #116530;
+	margin: 20px 0;
 }
 
 #welcome-pic{
