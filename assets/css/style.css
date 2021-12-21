@@ -126,8 +126,8 @@ h1, h3 {
   color: #116530;
   padding: 0 5%;
 }
-/* media queries*/
 
+/* media queries*/
 @media (max-width: 992px) {
   .navbar-nav {
     text-align: center;
@@ -149,8 +149,66 @@ h1, h3 {
     text-align: center;
     margin: 3% auto;
   }
-
-  hr {
+/* Removing content at a given breakpoint*/
+  .featp, br {
     display: none;
   }
+
+/* Adding content being removed from the layout at a given breakpoint. This action could have been easier with JS ES6, however it would have affected performance */
+
+  #breakpointPatience::after {
+    content: "Each object becomes unique";
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin: 3% auto;
+    color: #116530;
+    padding: 0 5%;
+  }
+
+  #breakpointPrecision::after {
+    content: "A carpenter's experience turned into accurate works";
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin: 3% auto;
+    color: #116530;
+    padding: 0 5%;
+  }
+
+  #breakpointCompletion::after {
+    content: "Durable goods and refined materials";
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin: 3% auto;
+    color: #116530;
+    padding: 0 5%;
+  }
+
+  .categoriesPic {
+    width: 50%%;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 2px 2px 8px grey;
+  }
+}
+
+/* categories section */
+
+.innerCatPic {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.categoriesPic {
+  width: 100%;
+  height: auto;
+  border-radius: 20%;
+  box-shadow: 2px 2px 8px grey;
 }
