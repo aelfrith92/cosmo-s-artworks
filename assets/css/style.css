@@ -127,6 +127,48 @@ h1, h3 {
   padding: 0 5%;
 }
 
+/* categories section */
+
+#categories .row {
+	margin: 4% 0;
+}
+
+/* Here is the div container with alignment to the right*/
+.innerCatPicRight {
+  text-align: right;
+  margin: 0 auto;
+	padding: 0 2%;
+}
+
+/* Here is the div container with alignment to the left*/
+.innerCatPicLeft {
+  text-align: left;
+  margin: 0 auto;
+	padding: 0 2%;
+}
+
+/* Here is the content: the img tag*/
+.categoriesPic {
+  border-radius: 20%;
+  box-shadow: 2px 2px 8px grey;
+}
+
+/* Here are the containers with shared style */
+.descCatleft, .descCatright {
+	overflow: auto;
+	padding: 0 2%; 
+}
+
+/* Here is the container containing heading and paragraph aligned to the left */
+.descCatleft {
+  
+}
+
+/* Here is the container containing heading and paragraph aligned to the right */
+.descCatright {
+  text-align: right;
+}
+
 /* media queries*/
 @media (max-width: 992px) {
   .navbar-nav {
@@ -195,20 +237,10 @@ h1, h3 {
     border-radius: 20%;
     box-shadow: 2px 2px 8px grey;
   }
-}
 
-/* categories section */
-
-.innerCatPic {
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.categoriesPic {
-  width: 100%;
-  height: auto;
-  border-radius: 20%;
-  box-shadow: 2px 2px 8px grey;
+  .innerCatPic {
+    text-align: center;
+    margin: 0 auto;
+    display:block;
+  }
 }
