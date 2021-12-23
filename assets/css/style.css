@@ -74,14 +74,17 @@ h1, h3 {
   margin: 5% auto;
 }
 
+.headerContent p {
+	margin-top: 20px;
+}
+
 .section-odd h1 {
   font-size: 2.0rem;
   line-height: 1.3;
 }
 
 .section-odd p {
-  color: #116530;
-  margin-top: 20px;
+  color: #0B4619;
 }
 
 #welcome-pic {
@@ -128,7 +131,7 @@ h1, h3 {
 
 .featp {
   margin: 0 auto;
-  color: #116530;
+  color: #0B4619;
   padding: 0 5%;
 }
 
@@ -142,17 +145,41 @@ h1, h3 {
 }
 
 .flex-container > div {
-	height: 30vh;
+	height: 35vh;
 }
 
 .catpic {
-	background-color: green;
 	flex: 40%;
+	display: flex;
+	justify-content: center;
 }
 
 .catdesc {
-	background-color: yellowgreen;
 	flex: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 5%;
+}
+
+.actualpic {
+	width: auto;
+	height: 100%;
+	box-shadow: 2px 2px 8px grey;
+	border-radius: 20%;
+}
+
+.materialsdiv img[src$=".svg"] {
+	width: 37px;
+	height: auto;
+}
+
+.materialsdiv img[src$=".webp"] {
+	border-radius: 50%;
+	width: 37px;
+	height: auto;
 }
 
 /* media queries*/
@@ -190,7 +217,6 @@ h1, h3 {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     margin: 3% auto;
-    color: #116530;
     padding: 0 5%;
   }
 
@@ -201,7 +227,6 @@ h1, h3 {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     margin: 3% auto;
-    color: #116530;
     padding: 0 5%;
   }
 
@@ -212,7 +237,7 @@ h1, h3 {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     margin: 3% auto;
-    color: #116530;
+
     padding: 0 5%;
   }
 
