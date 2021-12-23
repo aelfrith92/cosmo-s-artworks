@@ -146,6 +146,7 @@ h1, h3 {
 
 .flex-container > div {
 	height: 35vh;
+	overflow: hidden;
 }
 
 .catpic {
@@ -169,6 +170,10 @@ h1, h3 {
 	height: 100%;
 	box-shadow: 2px 2px 8px grey;
 	border-radius: 20%;
+}
+
+.materialsdiv {
+	margin-top: 5%;
 }
 
 .materialsdiv img[src$=".svg"] {
