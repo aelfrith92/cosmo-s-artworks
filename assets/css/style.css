@@ -14,6 +14,7 @@ h1, h3 {
 /* HEADER ELEMENTS */
 /* section title */
 .section-odd {
+	width: 100%;
   background-color: #ffc107;
 }
 
@@ -24,6 +25,10 @@ h1, h3 {
 /* navbar-related elements starts here */
 .navbar {
   padding: 0 0 2.0rem 0;
+}
+
+.navbar-toggler-icon {
+	color: black;
 }
 
 #logoText {
@@ -129,62 +134,42 @@ h1, h3 {
 
 /* categories section */
 
-#categories .row {
-	margin: 4% 0;
+.flex-container {
+	display: flex;
+	padding: 3% 15%;
+	flex-wrap: wrap;
+	
 }
 
-/* Here is the div container with alignment to the right*/
-.innerCatPicRight {
-  text-align: right;
-  margin: 0 auto;
-	padding: 0 2%;
+.flex-container > div {
+	height: 30vh;
 }
 
-/* Here is the div container with alignment to the left*/
-.innerCatPicLeft {
-  text-align: left;
-  margin: 0 auto;
-	padding: 0 2%;
+.catpic {
+	background-color: green;
+	flex: 40%;
 }
 
-/* Here is the content: the img tag*/
-.categoriesPic {
-  border-radius: 20%;
-  box-shadow: 2px 2px 8px grey;
-}
-
-/* Here are the containers with shared style */
-.descCatleft, .descCatright {
-	overflow: auto;
-	padding: 0 2%; 
-}
-
-/* Here is the container containing heading and paragraph aligned to the left */
-.descCatleft {
-  
-}
-
-/* Here is the container containing heading and paragraph aligned to the right */
-.descCatright {
-  text-align: right;
+.catdesc {
+	background-color: yellowgreen;
+	flex: 60%;
 }
 
 /* media queries*/
-@media (max-width: 992px) {
-  .navbar-nav {
+
+@media (max-width: 768px) {
+  .headerContent {
+    margin: 3% auto;
+    text-align: center;
+  }
+
+	.navbar-nav {
     text-align: center;
   }
 
   .nav-item {
     width: 100%;
     padding: 7px;
-  }
-}
-
-@media (max-width: 768px) {
-  .headerContent {
-    margin: 3% auto;
-    text-align: center;
   }
 
   .featbox {
@@ -231,16 +216,9 @@ h1, h3 {
     padding: 0 5%;
   }
 
-  .categoriesPic {
-    width: 50%%;
-    height: auto;
-    border-radius: 20%;
-    box-shadow: 2px 2px 8px grey;
-  }
+	/* Categories sections */
 
-  .innerCatPic {
-    text-align: center;
-    margin: 0 auto;
-    display:block;
+  .catpic, .catdesc {
+    flex: 100%;
   }
 }
