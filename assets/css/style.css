@@ -145,19 +145,19 @@ h1, h3 {
 }
 
 .flex-container > div {
-	height: 40vh;
 	overflow: hidden;
 }
 
 .catpic {
-	flex: 40%;
+	flex: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 2%;
 }
 
 .catdesc {
-	flex: 60%;
+	flex: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -167,10 +167,11 @@ h1, h3 {
 }
 
 .actualpic {
-	width: auto;
-	height: 30vh;
-	box-shadow: 2px 2px 8px grey;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 2px 2px 8px grey;	
 	border-radius: 20%;
+	padding: 2%;
 }
 
 .materialsdiv {
@@ -190,7 +191,7 @@ h1, h3 {
 
 /* media queries*/
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .headerContent {
     margin: 3% auto;
     text-align: center;
@@ -253,6 +254,10 @@ h1, h3 {
     flex: 100%;
   }
 
+.catdesc h3 {
+	margin-top: 5%;
+}
+	
 	.revertAfter {
 		order: 2;
 	}
