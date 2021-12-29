@@ -125,8 +125,8 @@ h1, h3 {
   text-shadow: 1px 1px 10px greenyellow;
 }
 
-.featbox h2 {
-  font-size: 2.5rem;
+.featbox span {
+  font-size: 2.5rem;	
 }
 
 .featp {
