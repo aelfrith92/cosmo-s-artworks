@@ -305,7 +305,7 @@ footer p {
     display: none;
   }
 
-/* Adding content being removed from the layout at a given breakpoint. This action could have been easier with JS ES6, however it would have affected performance. Felxbox order might be an alternative as well, but code needs to be refactored. */
+	/* Adding content being removed from the layout at a given breakpoint. This action could have been easier with JS ES6, however it would have affected performance. Felxbox order might be an alternative as well, but code needs to be refactored. */
 
   #breakpointPatience::after {
     content: "Each object becomes unique";
@@ -337,7 +337,7 @@ footer p {
     padding: 0 5%;
   }
 
-	/* Categories sections */
+/* Categories sections */
 
   .catpic, .catdesc {
     flex: 100%;
@@ -355,7 +355,7 @@ footer p {
 		order: 1;
 	}
 
-	/* contactus section */
+/* contactus section */
 
 	.signup-form * {
 		width: 95%;
