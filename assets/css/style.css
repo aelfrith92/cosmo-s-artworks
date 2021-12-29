@@ -150,7 +150,7 @@ h1, h3 {
 .catpic {
 	flex: 40%;
 	display: flex;
-	justify-conten\t: center;
+	justify-content: center;
 	align-items: center;
 	padding: 2%;
 }
@@ -212,11 +212,16 @@ h1, h3 {
 	font-size: 2.8rem;
 }
 
-/* section carousel-comments */
+/* section contactcosimino */
 
-.carousel-item {
-	height: 300px;
-	width: 100%;
+.flex-form {
+	flex: 48%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2%;
+	margin: 1%;
+	background-color: yellowgreen;
 }
 
 /* media queries*/
