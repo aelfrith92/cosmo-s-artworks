@@ -300,11 +300,13 @@ footer p {
     text-align: center;
     margin: 3% auto;
   }
-/* Removing content at a given breakpoint*/
+	
+	/* Removing content at a given breakpoint*/
+	
   .featp, br {
     display: none;
   }
-
+	
 	/* Adding content being removed from the layout at a given breakpoint. This action could have been easier with JS ES6, however it would have affected performance. Felxbox order might be an alternative as well, but code needs to be refactored. */
 
   #breakpointPatience::after {
