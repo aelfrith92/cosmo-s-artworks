@@ -339,34 +339,34 @@ footer p {
 
 /* Categories sections */
 
-  .catpic, .catdesc {
-    flex: 100%;
-  }
+.catpic, .catdesc {
+	flex: 100%;
+}
 
-	.catdesc h3 {
-		margin-top: 5%;
-	}
+.catdesc h3 {
+	margin-top: 5%;
+}
 
-	.revertAfter {
-		order: 2;
-	}
+.revertAfter {
+	order: 2;
+}
 
-	.revertBefore {
-		order: 1;
-	}
+.revertBefore {
+	order: 1;
+}
 
 /* contactus section */
 
-	.signup-form * {
-		width: 95%;
-	}
+.signup-form * {
+	width: 95%;
+}
 
-	#contactcosimino img {
-		width: 95%;
-		max-height: 300px;
-	}
+#contactcosimino img {
+	width: 95%;
+	max-height: 300px;
+}
 
-	#contactcosimino .revertBefore {
-		margin-bottom: 2%;
-	}
+#contactcosimino .revertBefore {
+	margin-bottom: 2%;
+}
 }
