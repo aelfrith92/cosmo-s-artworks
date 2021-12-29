@@ -214,14 +214,26 @@ h1, h3 {
 
 /* section contactcosimino */
 
-.flex-form {
-	flex: 48%;
+.flex-contact {
 	display: flex;
+	padding: 3% 15%;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 2%;
-	margin: 1%;
-	background-color: yellowgreen;
+	width: 100%;
+}
+
+.signup-form {
+	background-color: rgba(255, 193, 7, 0.6);
+}
+
+#contactcosimino img {
+	width: 100%;
+	height: auto;
+}
+
+#contactcosimino div {
+	text-align: center;
 }
 
 /* media queries*/
@@ -303,7 +315,5 @@ h1, h3 {
 
 	/* aboutus section */
 
-	#aboutcosimino .carousel {
-	width: 100%;
 	}	
 }

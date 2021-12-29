@@ -213,12 +213,39 @@
 		</div>
 	</section>
 	
-	<section id="contactcosimino" class="flex-container">
-		<div class="flex-form">
+	<section id="contactcosimino" class="flex-contact">
+		<form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+			<h2>Enter your details below, specifying the category of works that you are interested in</h2>
+            <label for="fname">First Name</label>
+            <input id="fname" name="first_name" type="text" required class="text-input">
+            
+            <label for="lname">Last Name</label>
+            <input id="lname" name="last_name" type="text" required class="text-input">
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email_address" required class="text-input">
+            
+            <label for="iron">Wrought-iron</label>
+            <input type="radio" id="iron" name="category" value="iron" required>
+            <label for="objects">Objects and Homeware</label>
+            <input type="radio" id="objects" name="category" value="objects" required>
+            <label for="puzzles">Puzzles</label>
+            <input type="radio" id="puzzles" name="category" value="puzzles" required>
+
+						<label for="textbody">Message:</label>
+
+						<textarea id="textbody" name="body" rows="4" cols="50" placeholder="Type your message here">
+						
+						</textarea>
 			
-		</div>
-		<div class="flex-form">
-			
+            <input class="join-button" type="submit" value="Send">
+		</form>
+		<div>
+			<img src="assets/images/email.svg" alt="contact us form">
+			<hr>
+			<h3>
+				Reach out to Cosimino!
+			</h3>
 		</div>
 	</section>
 	
