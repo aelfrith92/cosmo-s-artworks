@@ -108,6 +108,7 @@ h1, h3 {
 }
 
 /* section features starts here*/
+
 #features {
   text-align: center;
 }
@@ -208,11 +209,11 @@ h1, h3 {
 	font-style: italic;
 }
 
-#aboutcosimino > h3 {
+#aboutcosimino > h2 {
 	font-size: 2.8rem;
 }
 
-#aboutcosimino h3, #aboutcosimino p {
+#aboutcosimino h2, #aboutcosimino p {
 	padding: 0 2%;
 }
 
