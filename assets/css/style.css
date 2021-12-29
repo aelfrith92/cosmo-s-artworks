@@ -212,6 +212,10 @@ h1, h3 {
 	font-size: 2.8rem;
 }
 
+#aboutcosimino h3, #aboutcosimino p {
+	padding: 0 2%;
+}
+
 /* section contactcosimino */
 
 .flex-contact {
@@ -223,22 +227,61 @@ h1, h3 {
 	width: 100%;
 }
 
+#contactcosimino .row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .signup-form {
-	background-color: rgba(255, 193, 7, 0.6);
+	background-color: rgba(255, 193, 7, 0.8);
+	text-align: center;
+	padding: 5%;
+	border-radius: 8px;
+}
+
+.signup-form * {
+	display: inline-block;
+	width: 80%;
+}
+
+.radioDesign {
+	padding: 2% 0;
+	margin-top: 2%;
+	background-color: rgba(220, 220, 220, 0.6);
+	border-radius: 8px;
+}
+
+.signup-form input, .signup-form textarea {
+	border-radius: 5px;
 }
 
 #contactcosimino img {
-	width: 100%;
-	height: auto;
+	width: 80%;
+	max-height: 300px;
 }
 
 #contactcosimino div {
 	text-align: center;
 }
 
+footer {
+	text-align: center;
+}
+
+.social-networks li {
+	display: inline;
+	list-style-type: none;
+	margin: 0 15px;
+}
+
+footer p {
+	font-size: 0.5rem;
+}
+
 /* media queries*/
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .headerContent {
     margin: 3% auto;
     text-align: center;
@@ -291,7 +334,6 @@ h1, h3 {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     margin: 3% auto;
-
     padding: 0 5%;
   }
 
@@ -301,9 +343,9 @@ h1, h3 {
     flex: 100%;
   }
 
-.catdesc h3 {
-	margin-top: 5%;
-}
+	.catdesc h3 {
+		margin-top: 5%;
+	}
 	
 	.revertAfter {
 		order: 2;
@@ -313,7 +355,18 @@ h1, h3 {
 		order: 1;
 	}
 
-	/* aboutus section */
+	/* contactus section */
+	
+	.signup-form * {
+		width: 95%;
+	}
 
-	}	
+	#contactcosimino img {
+		width: 95%;
+		max-height: 300px;
+	}
+
+	#contactcosimino .revertBefore {
+		margin-bottom: 2%;
+	}
 }

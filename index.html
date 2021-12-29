@@ -214,43 +214,72 @@
 	</section>
 	
 	<section id="contactcosimino" class="flex-contact">
-		<form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
-			<h2>Enter your details below, specifying the category of works that you are interested in</h2>
-            <label for="fname">First Name</label>
-            <input id="fname" name="first_name" type="text" required class="text-input">
-            
-            <label for="lname">Last Name</label>
-            <input id="lname" name="last_name" type="text" required class="text-input">
-            
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email_address" required class="text-input">
-            
-            <label for="iron">Wrought-iron</label>
-            <input type="radio" id="iron" name="category" value="iron" required>
-            <label for="objects">Objects and Homeware</label>
-            <input type="radio" id="objects" name="category" value="objects" required>
-            <label for="puzzles">Puzzles</label>
-            <input type="radio" id="puzzles" name="category" value="puzzles" required>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 revertAfter">
+				<form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+					<h2>Enter your details below</h2>
+					<label for="fname">First Name</label>
+					<input id="fname" name="first_name" type="text" required class="text-input" placeholder="Type your first name here">
+					
+					<label for="lname">Last Name</label>
+					<input id="lname" name="last_name" type="text" required class="text-input" placeholder="Type your last name here">
+					
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email_address" required class="text-input" placeholder="Type your email here">
 
-						<label for="textbody">Message:</label>
-
-						<textarea id="textbody" name="body" rows="4" cols="50" placeholder="Type your message here">
-						
-						</textarea>
-			
-            <input class="join-button" type="submit" value="Send">
-		</form>
-		<div>
+					<fieldset class="radioDesign">
+						<h4>Category that you are interested in</h4>
+						<label for="iron">Wrought-iron</label>
+						<input type="radio" id="iron" name="category" value="iron" required>
+						<label for="objects">Objects and Homeware</label>
+						<input type="radio" id="objects" name="category" value="objects" required>
+						<label for="puzzles">Puzzles</label>
+						<input type="radio" id="puzzles" name="category" value="puzzles" required>
+						<label for="toys">Toys</label>
+						<input type="radio" id="toys" name="category" value="toys" required>
+					</fieldset>
+	
+					<label for="textbody">Message:</label>
+	
+					<textarea id="textbody" name="body" rows="4" cols="30" placeholder="Type your message here" required></textarea>
+		
+					<input class="join-button" type="submit" value="Send">
+				</form>
+			</div>
+		
+		<div class="col-lg-6 col-md-6 revertBefore">
 			<img src="assets/images/email.svg" alt="contact us form">
 			<hr>
 			<h3>
 				Reach out to Cosimino!
 			</h3>
 		</div>
+	</div>
 	</section>
 	
+	<hr>
+	
 	<footer>
-
+		<ul class="social-networks">
+      <li>
+        <a href="https://www.facebook.com/disegnarecolferro" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+      </li>
+    </ul>
+		<p>
+			All graphic materials employed within this web page are fully-licensed or free-to-use. Read the <a href="https://github.com/aelfrith92/cosmo-s-artworks/blob/main/README.md" target="_blank" rel="noopener" aria-label="read.me file of this project">read.me</a> file of this project for further details. 
+		</p>
+		<p>
+			Designed and made by Alfredo M.
+		</p>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/8bd88c8cff.js" crossorigin="anonymous"></script>
