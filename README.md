@@ -96,87 +96,79 @@ The purpose of this is to fulfill the aforementioned user's story:
 #### Colour Palette
 The main colours used have been mainly inspired by the Bootstrap [Warning theme](https://getbootstrap.com/docs/5.1/customize/color/), alongside a related color palette retrieved on colorhunt.co [here](https://colorhunt.co/palette/ffcc1d0b4619116530e8e8cc). Following my mentor's advice, I have replaced the color #116530 with a darker shade, to improve the contrast rate of text-background and - consequently - the experience for visually impaired users.
 #### Typography
-The headers on all pages throughout the Website are using the **Libre Baskerville** font while the main text is using the **Cabin** font. 
+The headers on all pages throughout the Website are using:
+- the **Montserrat** font as a global parameter;
+- the **Roboto Condensed** font applied to h1, h2, and h3 tags;
+- the **Ubuntu Condensed** font applied to the text next to the logo, to give it a unique and minimal style within the page.<br>
+Fonts have been imported from Google Fonts website, using the @import instruction at the top of the custom style.css file.
 #### Imagery
-Brand is important to HOTD and they have provided their own Logo to be used in the Nav section of the website that will be displayed at all
-times no matter the device. The size and placement may vary dependant on screen size. Photo's of club members and events will be present throughout the Website. These images have been provided by the club's found Ronnie Robinson.
+The Brand icon is fictional. I have employed an icon downloaded by flaticon.com which would have resembled my father's look somehow, namely, depicting a moustache. However, I am not the only one having the exclusive right to employ such an icon as a resource on one's website. I have chosen the svg format, as it renders an excellent quality with a minimal memory allocation.
+
+As mentioned above and except for the social media icons in the footer which come from fontawesome, these icons have been downloaded from flaticon.com and are fully licensed.
+
+Other pictures within the web page have been converted into a webp format, to optimize data streaming and performance.
+
 #### Wireframes
-Home Page<br>
-![Home Page Wireframe](assets/wireframes/home-wireframe.JPG)<br>
-About Page<br>
-![About Page Wireframe](assets/wireframes/about-wireframe.JPG)<br>
-Event Page<br>
-![Events Page Wireframe](assets/wireframes/events-wireframe.jpg)<br>
-Gallery Page<br>
-![Gallery Page Wireframe](assets/wireframes/gallery-wireframe.JPG)<br>
-Contact Page<br>
-![Contact Page Wireframe](assets/wireframes/contact-wireframe.JPG)<br>
+![wireframe](docs/readmeImages/wireframing.jpg)<br>
+I have drafted sections and content on a paper sheet and then I have developed the actual content by employing the following layout stratgies:
+- [Bootstrap grid](https://getbootstrap.com/docs/5.1/layout/grid/);
+- Custom CSS;
+- [Flexbox responsivness](https://www.w3schools.com/css/css3_flexbox_responsive.asp).
 
-For full side PDF's of the wireframes, please click the links below
-* [Home Page Wireframe](assets/wireframes/home.pdf)
-
-* [About Page Wireframe](assets/wireframes/about.pdf)
-
-* [Events Page Wireframe](assets/wireframes/events.pdf)
-
-* [Gallery Page Wireframe](assets/wireframes/home.pdf)
-
-* [Contact Page Wireframe](assets/wireframes/home.pdf)
+Before adding content in each section, I firstly use to assigning different background colours to the containers, to see their behaviour. Once they meet my expectations, I add the content.
 
 #### Differences to Design
-In the original design, the Event section of the footer was to be hidden on smaller mobile devices to ensure adequate space and positioning. This was not implemented in the end as there was space to include it on all screen sizes.
+In the original design, multiple pages had been projected. After the second session witht the mentor, we came to the conclusion that a single page could have met all needs. The bottom part of the page was not completely clear in the wireframing step, so it may differ from the one depicted.
 ### Limitations
-Due to no JavaScript functionality, apart from Bootstraps(JS/JQuery) used for the Modal Form as outlined in the Frameworks Libraries and 
-Programs Used section, the contact forms will not store data or send email requests.
+Due to no JavaScript functionality, apart from Bootstraps(JS/JQuery), the contact form will not store data or send email requests. Due to other reasons, the gallery page has been postponed, as a hundred of photos need to be converted and scaled. Initially, a Bootstrap carousel had to be inmplemented, but it is now a pending feature.
 ***
 ## Features
  
 ### Existing Features
-- Alert on Desktop view (Alert present on index.html, about.html, gallery.html, contact.html) - This alert allows users to Book event tickets by opening up a modal form.
-- Booking button on the events.html page opens up the booking modal form (The same one as the alert)
-- Contact Form - This can be completed on the contact.html page and used in order to contact the club with any queries users may have.
-- Carousel Gallery - There are 4 carousel sliders within the Website. One is on the Event Page displaying a few slides from a successfull fundraiser for Lifeline Inishowen. The remaining three are on the Gallery Page and are only displayed on small screen sizes to prevent the need for excessive scrolling.
-- Embedded YouTube video - This past event video can be turned on/off by the user. It is not set to automatically run.
+- The Welcome picture is linked to an animation
+- Each section is responsive
+- The contact form lets the user reach out to Cosimino with any queries they may have
 
 ### Features Left to Implement
-- Users would like to have a forum incorporated into the Website. This feature was not implemented as part of the initial release but will be addressed in a future.
-- In order to implement the use of the proposed forum, signup and logins would have to be added.
+- A gellery page can definitely complete the user experience, given the countless works that Cosimino have created
+- A carousel within the main page
+- A "Back to the top" button to let the user navigate faster within the contents of the same page
+- An embedded google maps frame (showing a fictional location)
+- clearer and more concise/catchy language
 ***
 ## Technologies
 
 * HTML
-	* This project uses HTML as the main language used to complete the structure of the Website.
+  - This project uses HTML as the main language used to complete the structure of the Website.
 * CSS
-	* This project uses custom written CSS to style the Website.
-* [Bootstrap](https://getbootstrap.com/)
-	* The Bootstrap framework is used throughout this website for layouts and styling. The car
-	* This has also been used to import JavaScript/Query used for the pop up Event booking modal
+  - This project uses custom written CSS to style the Website.
+* [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) 5.1.3
+  - Given the past experience with Bootstrap, I have used it as main technology to define a responsive behaviour among the several sections. The Bootstrap Grid system and the navigation bar have been easily designed thanks to the pre-set features coming from bootstrap, even though most of time both layout and style have been overridden by custom CSS code. I am in fact fully aware of the underlying Bootstrap features. Please, notice the responsive sections manually designed with custom CSS and flexboxes.
 * [Font Awesome](https://fontawesome.com/)
-	* Font awesome Icons are used for the Social media links contained in the Footer section of the website.
+  - Font awesome Icons are used for the Social media links contained in the Footer section of the website.
 * [Google Fonts](https://fonts.google.com/)
-	* Google fonts are used throughout the project to import the *Libre Baskerville* and *Cabin* fonts.
-* [Visual Studio Code](https://code.visualstudio.com/)
-	* VS Code is the Integrated Development Environment used to develop the Website.
-* [GitHub](https://github.com/)
-	* GithHub is the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
+  - Google fonts are used throughout the project to import the aforementioned fonts, with specific font-sizes, through the @import instruction at the top of the custom CSS file.
+* [Replit](https://replit.com/@FredM2)
+  - ** Replit is the Integrated Development Environment used to develop the Website. After the first commit via gitHub, the following ones have been triggered via Replit shell. As for permissions, gitHub only required to generate a token to push, which I have stored locally in the "Secrets (Environmental Variables)" area. FredM2 is my username and Replit signature. **
+* [GitHub](https://github.com/aelfrith92)
+  - GithHub is the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
+  - Past personal projects have been used to get inspiration for the current milestone project. 
 * [Git](https://git-scm.com/)
-	* Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
-* [TinyJPG](https://tinyjpg.com/)
-	* TinyJPG is used to reduce the file sizes of images before being deployed to reduce storage and bandwith.
+  - Git is used as version control software to commit and push code to the GitHub repository via Replit, where the source code is stored.
+* [GIMP](https://www.gimp.org/)
+  - Gimp is used to convert, scale, and reduce the file sizes of images before being deployed to reduce storage and bandwidth.
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
-	* Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
-* [balsamiq Wireframes](https://balsamiq.com/wireframes/)
-	* This was used to create wireframes for 'The Skeleton Plane' stage of UX design.
-* [MS PAINT](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9)
-    * The dropper tool is this program was used against the Site logo to determine the exact shade of green to be used.
+  - Google chrome built-in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles. In particular, it came handy when troubleshooting layout and boxes.
 * [CSS Generator](https://cssgenerator.org/rgba-and-hex-color-generator.html)
-    * This was used to convert the RGBA colour for the site to Hex. 
-* [Favicon](https://favicon.io/)
-    * Favicon.io was used to make the site favicon 
-* [Techsini](http://techsini.com/multi-mockup/index.php)
-    * tecnisih.com Multi Device Website Mockup Generator was used to create the Mock up image in this README
-* [placehold.it](https://placehold.it)
-    * placehold.it was used to display the colours shown in the Color Scheme section.
+  - This was used to convert the RGBA colour for the site to Hex. 
+* [Flaticon](https://www.flaticon.com/)
+  - Flaticon has been used as main icon repository.
+* [Colorhunt.co](https://colorhunt.co/)
+  - Colorhunt has been used to identify the best color palettes and shades
+* [Wood-database](https://www.wood-database.com/)
+  - Wood-database has been used to retrieve part of the wood textures implemented in the categories sections.
+* [Mentor's read.me template](https://github.com/Daisy-McG/MilestoneProject-1/blob/master/README.md)
+  - This read.me file has been drafted following the advice returned by the mentor, as well as following suggestions released on the course modules.
 ***
 ## Testing
 
@@ -184,49 +176,42 @@ Programs Used section, the contact forms will not store data or send email reque
 
 #### Summary 
 
-Testing is required on MilestoneProject-1 – Hair O’ The Dog MCC Responsive Website.
+Testing is required on MilestoneProject-1 – Cosmo's Drawing.
 
-As this project is static and contains no back-end functionality, the testing performed will be on the visual effects and layout of the Website. Testing to be done on at least three web browsers and all screen sizes.
+- As this project is static and contains no back-end functionality, the testing performed will be on the visual effects and layout of the Website. Testing to be done on at least three web browsers (Google Chrome, Apple Safari, Mozilla Firefox) and all screen sizes.
 
-No elements should overlap another container div. All elements should remain on the screen at all sizes above 300px. All carousel items should be controllable with the mouse as well as sliding on a timer. 
+- No elements should overlap another container div.
 
-All nav links should direct to the correct html pages as per their names. The Home page is the exception, this one will redirect to index.html. 
+- All nav links should direct to the correct html relative references within the page, as per their names.
 
-All links to external websites must open in a new browser.
+- All links to external websites must open in a new browser.
 
-Testing of form validation will also be required to ensure the correct inputs are taken and that all fields are required. 
+- Testing of form validation will also be required to ensure the correct inputs are taken and that all fields are required.
 
-Validation of inclusion for all features included in the Structure of the Website / Wireframes must be performed.
+- Code validation tools for [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/)
 
-The live Project can be found [here](https://daisy-mcg.github.io/MilestoneProject-1/index.html).</br>
-#### High Level Test Cases 
-![Test Cases](assets/images/readme-images/high-level-tests.jpg)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse) tool by Google Chrome
 
-#### Out of Scope  
+- [Waive](https://wave.webaim.org/) - Google Chrome plug-in to test common code errors and warnings, which encompass accessibility features and best practices.
 
-* Testing form validation for phone number is out of scope. No Reg-Ex has been implemented so this will take a string value. 
+- The live Project can be found [here](https://aelfrith92.github.io/cosmo-s-artworks/).
 
 ### Test Results
-![Results](assets/images/readme-images/test-results.JPG)<br>
-Testing results can be found [here](assets/test-results/test-results.xlsx)<br>
-Please note these results are a .xlsx file and will require excel, google docs or compatiable program to open the file.<br>
-All Pages were run through the [W3C HTML Validator](https://validator.w3.org/) and showed no errors.<br>
-CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and showed no errors.<br>
-Website was tested by running locally and tested on the deployed version. No differences found.
-
-* As a First Time user, I want to easily understand the main purpose of the site and learn more about the organisation. - Testing was performed to ensure Club information was displayed on the Home Page.
-* As a First Time user, I want to be able to easily navigate throughout the site to find content. - Testing was performed on all Navigation links to ensure users can easily navigate the Website.
-* As a First Time user, I want to view the website and content clearly on my mobile device. - Testing was performed to ensure the Website was responsive on all devices.
-* As a First Time user, I want to find ways to follow the HOTD Club on different social media platforms. - Testing was performed to ensure Social Media links had been added to the Website.
-
-* As a Returning user, I want to order tickets online in advance of events so that I am garanteed entry. - Testing was performed to ensure the Booking Modal(Alert on the top of Pages and Booking Button on Events Page) was functioning throughout the Website.
-* As a Returning user, I want to contact the organisation so I can request more information. - Testing was done to ensure there was a contact form on the Website and that the Footer also contained contact information.
-
-* As a Frequent user, I want to check to see if there are any new upcoming events. - Testing was done to ensure upcoming events were displayed on the Events Page.
-* As a Frequent user, I want to check to see if there are any new photos and media from the clubs activities. - Testing was performed to ensure a gallery had been added with photos from the clubs activities.
-* As a Frequent user, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation. - Testing was performed to validate a checkbox had been added to the contact form allowing users to sign up for the Club newsletter.
+- The animation, links, images, Bootstrap layouts, custom layouts of containers behaved as expected on 3 different browsers.
+- No overlapping detected.
+- Nav links and external links behave as expected.
+- Form validation returns all variables correctly assigned to each HTML "name" attributes
+- Code validation returned no errors 
+- Lighthouse behaved differently, depending on the device employed for the test.
+  - on a Windows ultrabook
+    ![lighthouseWindows]()
+  
 
 ### Issues and Resolutions to issues found during testing
+indentation
+radio inputs align
+lighthouse
+
 * Clicking the logo doesn't redirect to home page. This was resolved by updating the href on all Pages.
 * Photo alignment issue on Home Page, this was fixed by adding bootstrap classes d-flex align-items-center and img-fluid.
 * YouTube video on Events page was causing overlapping on small screens due to having a fixed size. This was resolved by removing fixed width and height and setting img-fluid in the div.
