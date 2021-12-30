@@ -58,8 +58,8 @@ My father - Cosimino Morieri, the client - always wished he had a personal websi
 * As a Returning and Frequent user, I want to share the content with friends and have a look at the gallery.
 * As a Returning user, I want to contact Cosimino, so I can request more information.
 
-### Structure
-The site contains just one single page for the time being. A gallery page will be added in the future, as the visual resources need a format conversion, in order to optimize data streaming and performance.
+### Features
+The site contains just one single page for the time being.
 
 The Navigation Menu allows users to easily navigate the different sections of the web page, even on smaller devices thanks to the responsive and collapsable version of the same. It contains the icon chosen as website logo, retrieved by flaticon.com and fully licensed. Visit the folder "flaticon_licenses" within the root for further details. Same applies to the Burger Menu icon (further details about it in the following paragraphs), the wood icon, the iron icon, the email icon. No attribution is required.
 
@@ -72,7 +72,7 @@ The purpose of this is to fulfill the aforementioned user's story:
 
 Custom CSS and Bootstrap 5.1.3 will be employed to make the Website responsive by the use of media queries, the Boostrap Grid system, and flexboxes CSS properties. All sections contain code that overrides Bootstrap pre-set style.
 
-The main page (as well as the future gallery page) will be responsive. There is just one chosen layout breakpoint, which triggers the alternative views of contents, namely, 768px as maximum width. 
+The main page will be responsive. There is just one chosen layout breakpoint, which triggers the alternative views of contents, namely, 768px as maximum width. 
 Images have been converted, scaled, and included in the code so that they are accessible and light, in terms of data streaming and performance. A minimum height and a responsive width have been set, so that they are still visible even at narrow viewport widths.
 The purpose of this is to fulfill the aforementioned user's story:
 > As a First Time user, I want to view the website and content clearly on my mobile device.
@@ -81,14 +81,37 @@ The main page will contain a Contact Us section, which will allow the user to re
 The purpose of this is to fulfill the aforementioned user's story:
 > As a Returning user, I want to contact Cosimino, so I can request more information.
 
-All pages will contain a Footer Element with Social Media Icons. The icons used will be
-from font-awesome. These are referenced below in the Frameworks-Libraries-and-Programs-Used section of this document. 
+The main page will contain a Footer Element with Social Media Icons. The icons used will be
+from fontawesome. These are referenced below in the Frameworks-Libraries-and-Programs-Used section of this document. 
 The aim of the Footer elements are to fulfill the aforementioned user's story:
 > As a First Time user, I want to find ways to follow Cosimino's activities on different social media platforms.<br>
+ 
+#### Existing Features
+- The Welcome picture is linked to an animation
+- Each section is responsive
+- The contact form lets the user reach out to Cosimino with any queries they may have
+- Sections are presented with an alternated colour pattern
 
-The Gallery Page (to be developed) will contain a rich number of Cosimino's artworks, all designed by following the flexbox responsiveness layout showed [here](https://www.w3schools.com/css/css3_flexbox_responsive.asp).
-The purpose of this is to fulfill the aforementioned user's story:
-> As a Returning and Frequent user, I want to share the content with friends and have a look at the gallery.
+- The Header section includes a navigation menu (with a fictional logo), a welcome message and a welcome animated picture which lets the user get an idea of Cosimino's activity:
+  ![welcome](docs/readmeImages/header.jpg)
+- The Features section aims at catching the attention of lazy users in a nutshell, by describing the uniqueness of Cosimino's works:
+  ![features](docs/readmeImages/features.jpg)
+- The following sections present the user with different categories of artworks made by Cosimino:
+  ![categories](docs/readmeImages/categories.jpg)
+- After the categories, a brief desciption about Cosimino's background is provided:
+  ![about](docs/readmeImages/about.jpg)
+- The contact form comes straight after:
+	![contact](docs/readmeImages/contact.jpg)
+- And finally, the footer containing the social media links:
+  ![social](docs/readmeImages/social.jpg)
+
+#### Features Left to Implement
+- A gellery page can definitely complete the user experience, given the countless works that Cosimino have created. The purpose of this is to fulfill the aforementioned user's story:
+	>  As a Returning and Frequent user, I want to share the content with friends and have a look at the gallery.
+- A carousel within the main page
+- A "Back to the top" button to let the user navigate faster within the contents of the same page
+- An embedded google maps frame (showing a fictional location)
+- clearer and more concise/catchy language
 
 ### Design
 #### Colour Palette
@@ -120,34 +143,7 @@ In the original design, multiple pages had been projected. After the second sess
 ### Limitations
 Due to no JavaScript functionality, apart from Bootstraps(JS/JQuery), the contact form will not store data or send email requests. Due to other reasons, the gallery page has been postponed, as a hundred of photos need to be converted and scaled. Initially, a Bootstrap carousel had to be inmplemented, but it is now a pending feature.
 ***
-## Features
- 
-### Existing Features
-- The Welcome picture is linked to an animation
-- Each section is responsive
-- The contact form lets the user reach out to Cosimino with any queries they may have
-- Sections are presented with an alternated colour pattern
 
-- The Header section includes a navigation menu (with a fictional logo), a welcome message and a welcome animated picture which lets the user get an idea of Cosimino's activity:
-  ![welcome](docs/readmeImages/header.jpg)
-- The Features section aims at catching the attention of lazy users in a nutshell, by describing the uniqueness of Cosimino's works:
-  ![features](docs/readmeImages/features.jpg)
-- The following sections present the user with different categories of artworks made by Cosimino:
-  ![categories](docs/readmeImages/categories.jpg)
-- After the categories, a brief desciption about Cosimino's background is provided:
-  ![about](docs/readmeImages/about.jpg)
-- The contact form comes straight after:
-	![contact](docs/readmeImages/contact.jpg)
-- And finally, the footer containing the social media links:
-  ![social](docs/readmeImages/social.jpg)
-
-### Features Left to Implement
-- A gellery page can definitely complete the user experience, given the countless works that Cosimino have created
-- A carousel within the main page
-- A "Back to the top" button to let the user navigate faster within the contents of the same page
-- An embedded google maps frame (showing a fictional location)
-- clearer and more concise/catchy language
-***
 ## Technologies
 
 * HTML
@@ -261,7 +257,7 @@ The bash terminal within the Replit UI was already able to trigger commands like
 
 ** However **, for each push, I had to define my username and push token, retrieved by following the steps described at [this page](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
-** Moreover **, in order to deploy the content within the Replit environment each time, I have used the handy feature provided by Replit and concerning the .replit file. By defining 2 lines of code in it, namely the command and the language, I was able to trigger "python3 -m http.server" by just hitting the **Run** button at the top.
+** Moreover **, in order to deploy the content within the Replit environment each time, I have used the handy feature provided by Replit and concerning the **.replit file**. [By defining 2 lines of code in it](https://docs.replit.com/programming-ide/configuring-repl), namely the command to run and the language (that the command is written in), I was able to trigger "python3 -m http.server" in the replit shell by just hitting the **Run** button at the top. Find the full reference at https://docs.replit.com/programming-ide/configuring-repl
 
 ### Deploying the project with Github Pages
 1. Navigate to the GitHub [Repository](https://github.com/aelfrith92/cosmo-s-artworks)
