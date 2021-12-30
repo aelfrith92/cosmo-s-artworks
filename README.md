@@ -128,6 +128,20 @@ Due to no JavaScript functionality, apart from Bootstraps(JS/JQuery), the contac
 - The Welcome picture is linked to an animation
 - Each section is responsive
 - The contact form lets the user reach out to Cosimino with any queries they may have
+- Sections are presented with an alternated colour pattern
+
+- The Header section includes a navigation menu (with a fictional logo), a welcome message and a welcome animated picture which lets the user get an idea of Cosimino's activity:
+  ![welcome](docs/readmeImages/header.jpg)
+- The Features section aims at catching the attention of lazy users in a nutshell, by describing the uniqueness of Cosimino's works:
+  ![features](docs/readmeImages/features.jpg)
+- The following sections present the user with different categories of artworks made by Cosimino:
+  ![categories](docs/readmeImages/categories.jpg)
+- After the categories, a brief desciption about Cosimino's background is provided:
+  ![about](docs/readmeImages/about.jpg)
+- The contact form comes straight after:
+	![contact](docs/readmeImages/contact.jpg)
+- And finally, the footer containing the social media links:
+  ![social](docs/readmeImages/social.jpg)
 
 ### Features Left to Implement
 - A gellery page can definitely complete the user experience, given the countless works that Cosimino have created
@@ -192,7 +206,7 @@ Testing is required on MilestoneProject-1 – Cosmo's Drawing.
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse) tool by Google Chrome
 
-- [Waive](https://wave.webaim.org/) - Google Chrome plug-in to test common code errors and warnings, which encompass accessibility features and best practices.
+- [Wave](https://wave.webaim.org/) - Google Chrome plug-in to test common code errors and warnings, which encompass accessibility features and best practices.
 
 - The live Project can be found [here](https://aelfrith92.github.io/cosmo-s-artworks/).
 
@@ -204,68 +218,82 @@ Testing is required on MilestoneProject-1 – Cosmo's Drawing.
 - Code validation returned no errors 
 - Lighthouse returned the following outcome
     ![lighthouse](docs/readmeImages/lighthouse.jpg)
-
+- Wave returned the following outcome
+  ![wave](docs/readmeImages/wave.jpg)
+  The only 2 alerts returned concerned the too-small texts at the bottom of the page, which I have not changed, as it is meant as secondary content for other targets, aware of such formalities.
   
 
 ### Issues and Resolutions to issues found during testing
-indentation
-radio inputs align
-lighthouse
+* Indentation
+  - Even though aware of the indentation issues in the HTML and CSS files, each time that I have tried to push the correct versions, files on gitHub does not mirror the actual appearance on Replit. See a comparison as follows:
+  	![replit_indentation](docs/readmeImages/replit_indentation.jpg)<br>
+		VS<br>
+		![gitHub_indentation](docs/readmeImages/gitHub_indentation.jpg)
 
-* Clicking the logo doesn't redirect to home page. This was resolved by updating the href on all Pages.
-* Photo alignment issue on Home Page, this was fixed by adding bootstrap classes d-flex align-items-center and img-fluid.
-* YouTube video on Events page was causing overlapping on small screens due to having a fixed size. This was resolved by removing fixed width and height and setting img-fluid in the div.
-* Navigation menu items were being covered on smaller screens due to amount of items and text not shrinking. This was resolved by adding a media query between min width 576px and max width 654px that changes to a smaller font size.
-* Spelling mistakes were found when proof reading, these were corrected.
-* About page Meet the member section photos and text were overlapping on medium and below screens. This was fixed by correcting column sizes and adding class member-alignment with corresponding css styling.
-* On extra wide screens content was being stretched across the entire width of the screen. This was fixed by changing container-fluid to container.
-* Modal Booking form was accepting any inputs in fields. This was resolved by adding the required attribute to all fields.
-* Carousel on Events page was expanding the full width of the screen, this was causing the images to be distorted and strected. This was resolved by by adding a maximum height and width to the containing div.
-* On the Gallery page, the HR was sitting beside the title on large and medium screen sizes. This was resolved by wrapping the titles into a a div and assigning col-12 class.
+* Radio inputs alignment in the contact form does not mirror expectations on Apple Safari, as they are aligned to the left, instead of center as on Chrome and Firefox. I have tried with compatible alternatives (-webkit-), but it did not work. Find a screenshot of the issue as follows:
+  - ![radio](docs/readmeImages/radio.jpg)
+ 
+* The Toggler Button in the navigation menu came with a bug, only if the warning theme is selected. More specifically, the button is presented without the 3 parallel lines. To solve this issue, I have included an svg file which resembles the 3 lines. However, it still goes off the expected layout when the viewport is super narrow (in fact, the bug only shows up if you open the Chrome dev tools, otherwise the ordinary, minimum width does not reveal this issue). Find a comparison below:
+  - ordinary viewport:
+    ![ordinary](docs/readmeImages/ordinary.jpg)
+  - unexpected responsive behaviour:
+    ![narrow](docs/readmeImages/super_narrow.jpg)
+
+* Generally speaking, layout problems were the most frequent ones. I have overcome them by adopting an essential approach: creating containers without contents first, in order to test their behaviour. Adding content once containers behaved as expected.
+
+* Images size affected the performance of the page. Re-scaling and converting all of them to webp solved most of the issues.
+
+* The categories pictures were initially overlapped by other containers. I have solved this issue by editing their dimensions and by adding padding and margins to create a sort of frame, which does not catch the user's attention as it would do.
+
+* Centering in all containers has been troubleshot by using flexboxes, justify-content, align-itmes
 ***
 ## Deployment
 
 ### Project Creation
-The project was started by navigating to the [template](https://github.com/Code-Institute-Org/gitpod-full-template) and clicking 'Use this template'. Under Repository name I input MilestoneProject-1 and checked the Include all branches checkbox. I then navigated to the new [repository](https://github.com/Daisy-McG/MilestoneProject-1). I then clicked the Code drop down and selected HTTPS and copied the link to the clipboard.
+The project was started by navigating to the [template](https://github.com/Code-Institute-Org/gitpod-full-template) and clicking 'Use this template'. Under Repository name I input "cosmo-s-artworks" and checked the Include all branches checkbox. I then navigated to the new [repository](https://github.com/aelfrith92/cosmo-s-artworks). 
 
-Opening a bash terminal in Visual studio code I then typed git clone [link from clipboard](https://github.com/Daisy-McG/MilestoneProject-1.git) followed by open folder and navigating to the newly created local repository. The following commands were used throughout the project:
+Having Replit as main and only IDE, I went to my [Replit account](https://replit.com/@FredM2) and I have created a new Repl by pulling the repository from gitHub. 
 
-* git add filename - This command was used to add fils to the staging area before commiting.
-* git commit -m *commit message explaining the updates* - This command was used to to commit changes to the local repository.
-* git push - This command is used to push all commited changes to the GitHub repository. 
+The bash terminal within the Replit UI was already able to trigger commands like:
 
-### Using Github Pages
-1. Navigate to the GitHub [Repository:](https://github.com/Daisy-McG/MilestoneProject-1)
+* git status - This command was used to check the status of edited files ready to be added to the staging area
+* git add *.* - This command was used to add edited files to the staging area
+* git commit -m *commit message explaining the updates* - This command was used to commit changes to the local repository
+* git push - This command was used to push all commited changes to the GitHub repository <br>
+
+** However **, for each push, I had to define my username and push token, retrieved by following the steps described at [this page](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+
+** Moreover **, in order to deploy the content within the Replit environment each time, I have used the handy feature provided by Replit and concerning the .replit file. By defining 2 lines of code in it, namely the command and the language, I was able to trigger "python3 -m http.server" by just hitting the **Run** button at the top.
+
+### Deploying the project with Github Pages
+1. Navigate to the GitHub [Repository](https://github.com/aelfrith92/cosmo-s-artworks)
 1. Click the 'Settings' Tab.
-1. Scroll Down to the Git Hub Pages Heading.
+1. Scroll Down to the Git Hub Pages menu item on the left.
 1. Select 'Master Branch' as the source.
 1. Click the Save button.
 1. Click on the link to go to the live deployed page.
 
 ### Run Locally
-1. Navigate to the GitHub [Repository:](https://github.com/Daisy-McG/MilestoneProject-1)
-1. Click the Code drop down menu.
-1. Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
-1. Open your developement editor of choice and open a terminal window in a directory of your choice.
-1. Use the 'git clone' command in terminal followed by the copied git URL.
-1. A clone of the project will be created locally on your machine.
+1. Hit on the **Run** button at the top
 
 ***
 ## Credits
 ### Code
-The code to style the check-box background color was taken from the comments of [Stackoverflow post](https://stackoverflow.com/questions/24322599/why-cannot-change-checkbox-color-whatever-i-do)
+- Images respnsiveness https://www.w3schools.com/howto/howto_css_image_responsive.asp
+- W3schools has been the main source of knowledge
+- My mentor, Daisy McGirr, also suggested to pay attention to responsiveness, accessibility features, indentation, **commit signatures**.
 ### Content
-The content of this software was created by Daisy McGirr based upon discussions with Ronnie Robinson, Hair O' The Dog MCC.
+- Wood textures come from visual resources available at https://www.wood-database.com/
+- Icons retrieved from both fontawesome and flaticon
+- General design ideas inspired by Angela Yu, founder of https://www.appbrewery.co/
+- Cosimino Morieri himself, as source of his own works and related photos
 
 ### Media
-The photos and video used in this video are property of Hair O' The Dog MCC. Permission was granted to use all media files by Ronnie Robinson, club Founder.
-The YouTube video on the events page is property of Marijus Ltu. Permission was obtained to use this video.
+All graphis materials are fully licensed or free-to-use.
 
 ### Acknowledgements
 
-I'd like to thank my mentor Spencer Baribell for his guidance throughout my project.<br>
-Thanks to fellow classmate @Jay Bradley for helping me figure out how to link my TOC to headings with spaces.<br>
-I'd like to give a special mention to past students Anthony and Mr_Bim_alumni who guided me and helped me learn to debug with developer tools whenever I faced alignment issues with my Website.<br>
+I'd like to thank my mentor Daisy McGirr for his guidance throughout my project.<br>
 
 ## Comments
-Git commits are showing up as two contributors, one as Your Name and one verified as Daisy-McG. This was caused by pushing without setting a signature for commits from VS Code, a signature was added on 25/10/2020 and all new commits are now verified. All commits were pushed by Daisy McGirr.
+## **Git commits are showing up as two contributors, one as Alfredo Morieri (gitHub username: aelfrith92) and one verified as FredM2 (my replit username). This was caused by pushing without setting a signature for commits from replit. All commits were pushed by Alfredo Morieri.**
