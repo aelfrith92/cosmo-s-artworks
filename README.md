@@ -56,59 +56,45 @@ My father - Cosimino Morieri, the client - always wished he had a personal websi
 * As a First Time user, I want to be able to easily navigate throughout the site to find content.
 * As a First Time user, I want to view the website and content clearly on my mobile device.
 * As a First Time user, I want to find ways to follow Cosimino's activities on different social media platforms.
-#### Returning Visitor Goals
-* As a Returning user, I want to share the content with friends and have a look at the gallery (to be implemented in the future).
+#### Returning and Frequent Visitor Goals
+* As a Returning and Frequent user, I want to share the content with friends and have a look at the gallery.
 * As a Returning user, I want to contact Cosimino, so I can request more information.
 
 ### Structure
 The site contains just one single page for the time being. A gallery page will be added in the future, as the visual resources need a format conversion, in order to optimize data streaming and performance.
-The Navigation Menu allows users to easily navigate the different sections of the web page, even on smaller devices thanks to the responsive and collapsable version of the same.
+
+The Navigation Menu allows users to easily navigate the different sections of the web page, even on smaller devices thanks to the responsive and collapsable version of the same. It contains the icon chosen as website logo, retrieved by flaticon.com and fully licensed. Visit the folder "flaticon_licenses" within the root for further details. Same applies to the Burger Menu icon (further details about it in the following paragraphs), the wood icon, the iron icon, the email icon. No attribution is required.
+
 The purpose of this is to fulfill the aforementioned user's story:
 > As a First Time user, I want to be able to easily navigate throughout the site to find content.
 
-The Home Page contains a brief overview about Cosimino's background.
+The Home Page contains a brief overview about Cosimino's background and crafted works.
 The purpose of this is to fulfill the aforementioned user's story:
 > As a First Time user, I want to easily understand the main purpose of the site and learn more about the artist.
 
 Custom CSS and Bootstrap 5.1.3 will be employed to make the Website responsive by the use of media queries, the Boostrap Grid system, and flexboxes CSS properties. All sections contain code that overrides Bootstrap pre-set style.
 
-All pages (as well as the future gallery page) will be responsive. There is just one chosen layout breakpoint, which triggers the alternative views of contents, namely, 768px as maximum width. 
-Images have been converted, scaled, and included in the code so that they are accessible and light, in terms of data streaming and performance. A minimum height and a responsive width have been set, so that they are still visible even at narrow viewports.
+The main page (as well as the future gallery page) will be responsive. There is just one chosen layout breakpoint, which triggers the alternative views of contents, namely, 768px as maximum width. 
+Images have been converted, scaled, and included in the code so that they are accessible and light, in terms of data streaming and performance. A minimum height and a responsive width have been set, so that they are still visible even at narrow viewport widths.
 The purpose of this is to fulfill the aforementioned user's story:
 > As a First Time user, I want to view the website and content clearly on my mobile device.
 
-All pages will contain a Footer Element with Contact Information, Event Booking and Social Media Icons. The icons used will be
-from font-awesome. These are referenced below in the Frameworks-Libraries-and-Programs-Used section of this document. The event 
-Booking section will not be visible on smaller devices. The aim of the Footer elements are to fulfill user stories:
-> As a First Time user, I want to find ways to follow the HOTD Club on different social media platforms.<br>
-> As a Returning user, I want to order tickets online in advance of events so that I am garanteed entry.<br>
-> As a Returning user, I want to contact the club so I can request more information.
+The main page will contain a Contact Us section, which will allow the user to reach out to Cosimino in an easy and straightforward way. All form elements are required, to submit a clear and comprehensive enquiry.
+The purpose of this is to fulfill the aforementioned user's story:
+> As a Returning user, I want to contact Cosimino, so I can request more information.
 
-The About Page will contain The History of the Club, their current members, titles and personal bios. This page is to help 
-implement user story:
-> As a First Time user, I want to easily understand the main purpose of the site and learn more about the organisation.
+All pages will contain a Footer Element with Social Media Icons. The icons used will be
+from font-awesome. These are referenced below in the Frameworks-Libraries-and-Programs-Used section of this document. 
+The aim of the Footer elements are to fulfill the aforementioned user's story:
+> As a First Time user, I want to find ways to follow Cosimino's activities on different social media platforms.<br>
 
-The Events Page will contain information on upcoming and previous events run by the Club. There will be a booking form 
-connected to this page. 
-The purpose of this is to fulfull user stories:
-> As a Returning user, I want to order tickets online in advance of events so that I am garanteed entry.<br>
-> As a Frequent user, I want to check to see if there are any new upcoming events.
+The Gallery Page (to be developed) will contain a rich number of Cosimino's artworks, all designed by following the flexbox responsiveness layout showed [here](https://www.w3schools.com/css/css3_flexbox_responsive.asp).
+The purpose of this is to fulfill the aforementioned user's story:
+> As a Returning and Frequent user, I want to share the content with friends and have a look at the gallery.
 
-The Gallery Page will contain several Galleries with 8 photographs in each from various activities the club has engaged in.
-The purpose of these galleries are to fulfill user story:
-> As a Frequent user, I want to check to see if there are any new photos and media from the clubs activities.
-
-The Contact Page will contain a form that can be used to contact the Club through the website. This will also contain a check 
-box that will allow the user to sign up for the Clubs newsletter in order to keep up to date with the club.
-The purpose of this Page is to fulfill user stories:
-> As a Returning user, I want to contact the organisation so I can request more information.<br>
-> As a Frequent user, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-
-Throughout the desktop version of the website there will also be an alert at the top of all pages except the Events Page. This
-can be engaged with by the user. The resulting action will open up a modal form to allow the user to book event tickets.
 ### Design
-#### Colour Scheme
-The two main colours used are Green ![#1e7e34](https://placehold.it/15/1e7e34/000000?text=+) and an off shade of Black ![#181818](https://placehold.it/15/181818/000000?text=+) as these colours are similar to the clubs colours. A darker shade of green was picked than what is currently on the logo as the site would be too bright with the main colour. The darker green and off black shade should compliment each other without being over powering to the eyes.
+#### Colour Palette
+The main colours used have been mainly inspired by the Bootstrap [Warning theme](https://getbootstrap.com/docs/5.1/customize/color/), alongside a related color palette retrieved on colorhunt.co [here](https://colorhunt.co/palette/ffcc1d0b4619116530e8e8cc). Following my mentor's advice, I have replaced the color #116530 with a darker shade, to improve the contrast rate of text-background and - consequently - the experience for visually impaired users.
 #### Typography
 The headers on all pages throughout the Website are using the **Libre Baskerville** font while the main text is using the **Cabin** font. 
 #### Imagery
