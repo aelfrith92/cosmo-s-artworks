@@ -141,7 +141,7 @@ Before adding content in each section, I firstly use to assigning different back
 #### Differences to Design
 In the original design, multiple pages had been projected. After the second session witht the mentor, we came to the conclusion that a single page could have met all needs. The bottom part of the page was not completely clear in the wireframing step, so it may differ from the one depicted.
 ### Limitations
-Due to no JavaScript functionality, apart from Bootstraps(JS/JQuery), the contact form will not store data or send email requests. Due to other reasons, the gallery page has been postponed, as a hundred of photos need to be converted and scaled. Initially, a Bootstrap carousel had to be inmplemented, but it is now a pending feature.
+Due to no JavaScript functionality, apart from Bootstraps(JS/JQuery), the contact form will not store data or send email requests. Due to other reasons, the gallery page has been postponed, as a hundred of photos need to be converted and scaled. Initially, a Bootstrap carousel had to be implemented, but it is now a pending feature.
 ***
 
 ## Technologies
@@ -157,7 +157,7 @@ Due to no JavaScript functionality, apart from Bootstraps(JS/JQuery), the contac
 * [Google Fonts](https://fonts.google.com/)
   - Google fonts are used throughout the project to import the aforementioned fonts, with specific font-sizes, through the @import instruction at the top of the custom CSS file.
 * [Replit](https://replit.com/@FredM2)
-  - ** Replit is the Integrated Development Environment used to develop the Website. After the first commit via gitHub, the following ones have been triggered via Replit shell. As for permissions, gitHub only required to generate a token to push, which I have stored locally in the "Secrets (Environmental Variables)" area. FredM2 is my username and Replit signature. **
+  - **Replit is the Integrated Development Environment used to develop the Website. After the first commit via gitHub, the following ones have been triggered via Replit shell. As for permissions, gitHub only required to generate a token to push, which I have stored locally in the "Secrets (Environmental Variables)" area. FredM2 is my username and Replit signature.**
 * [GitHub](https://github.com/aelfrith92)
   - GithHub is the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
   - Past personal projects have been used to get inspiration for the current milestone project. 
@@ -225,7 +225,7 @@ Testing is required on MilestoneProject-1 – Cosmo's Drawing.
 		![gitHub_indentation](docs/readmeImages/gitHub_indentation.jpg)
 
 * Radio inputs alignment in the contact form does not mirror expectations on Apple Safari, as they are aligned to the left, instead of center as on Chrome and Firefox. I have tried with compatible alternatives (-webkit-), but it did not work. Find a screenshot of the issue as follows:
-  - ![radio](docs/readmeImages/radio.jpg)
+ ![radio](docs/readmeImages/radio.jpg)
  
 * The Toggler Button in the navigation menu came with a bug, only if the warning theme is selected. More specifically, the button is presented without the 3 parallel lines. To solve this issue, I have included an svg file which resembles the 3 lines. However, it still goes off the expected layout when the viewport is super narrow (in fact, the bug only shows up if you open the Chrome dev tools, otherwise the ordinary, minimum width does not reveal this issue). Find a comparison below:
   - ordinary viewport:
@@ -237,7 +237,7 @@ Testing is required on MilestoneProject-1 – Cosmo's Drawing.
 
 * Images size affected the performance of the page. Re-scaling and converting all of them to webp solved most of the issues.
 
-* The categories pictures were initially overlapped by other containers. I have solved this issue by editing their dimensions and by adding padding and margins to create a sort of frame, which does not catch the user's attention as it would do.
+* The categories pictures were initially overlapped by other containers. I have solved this issue by editing their dimensions and by adding padding and margins to create a sort of frame sorrounding them, which does not catch the user's attention as it would have done with overlapped containers.
 
 * Centering in all containers has been troubleshot by using flexboxes, justify-content, align-itmes
 ***
@@ -267,9 +267,6 @@ The bash terminal within the Replit UI was already able to trigger commands like
 1. Click the Save button.
 1. Click on the link to go to the live deployed page.
 
-### Run Locally
-1. Hit on the **Run** button at the top
-
 ***
 ## Credits
 ### Code
@@ -277,13 +274,13 @@ The bash terminal within the Replit UI was already able to trigger commands like
 - W3schools has been the main source of knowledge
 - My mentor, Daisy McGirr, also suggested to pay attention to responsiveness, accessibility features, indentation, **commit signatures**.
 ### Content
-- Wood textures come from visual resources available at https://www.wood-database.com/
+- Wood textures come from graphic resources available at https://www.wood-database.com/
 - Icons retrieved from both fontawesome and flaticon
 - General design ideas inspired by Angela Yu, founder of https://www.appbrewery.co/
 - Cosimino Morieri himself, as source of his own works and related photos
 
 ### Media
-All graphis materials are fully licensed or free-to-use.
+All graphic materials are fully licensed or free-to-use.
 
 ### Acknowledgements
 
