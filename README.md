@@ -20,8 +20,6 @@
 * [Testing](#Testing)
     * [Test Strategy](#Test-Strategy)
       * [Summary](#Summary)
-      * [High Level Test Cases](#High-Level-Test-Cases)
-      * [Out of Scope](#Out-of-Scope)
     * [Test Results](#Test-Results)
     * [Testing Issues](#Issues-and-Resolutions-to-issues-found-during-testing)
 * [Deployment](#Deployment)
