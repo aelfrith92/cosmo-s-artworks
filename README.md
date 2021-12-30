@@ -202,9 +202,9 @@ Testing is required on MilestoneProject-1 – Cosmo's Drawing.
 - Nav links and external links behave as expected.
 - Form validation returns all variables correctly assigned to each HTML "name" attributes
 - Code validation returned no errors 
-- Lighthouse behaved differently, depending on the device employed for the test.
-  - on a Windows ultrabook
-    ![lighthouseWindows]()
+- Lighthouse returned the following outcome
+    ![lighthouse](docs/readmeImages/lighthouse.jpg)
+
   
 
 ### Issues and Resolutions to issues found during testing
